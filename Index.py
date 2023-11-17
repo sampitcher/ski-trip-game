@@ -6,7 +6,7 @@ st.set_page_config(
     page_icon="⛷️",
 )
         
-st.sidebar.success("Select a demo above.")
+st.sidebar.success("Enjoy.")
 
 st.write("""
 # Welcome to The Ski Trip Game
@@ -21,9 +21,19 @@ st.divider()
 st.write("""
 # Aim of the game
 First player to 10 points is the winner, there are a number of ways to get points:
-- 2 points when you get to a ski lift that is chosen for you
-- 2 points when you get to a ski lift chosen for the group
-- Points are awarded in the cards
+- 2 points when you get to a ski lift that is chosen from the setup
+- Points are awarded in the random cards
+""")
+         
+st.divider()
+
+st.write("""
+# Game play
+## A turn consists of either:
+- taking a lift
+- skiing a piste
+When you take a lift, you must first pick a random card in the Game section on the left.
+You finish your go either at the top or the bottom of a ski run.
 """)
          
 st.divider()

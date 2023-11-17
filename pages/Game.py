@@ -17,11 +17,19 @@ if st.button('Pick a card', key="pick"):
     ## {chosen_card_elements[1]}
              """)
 
-    # my_card = card(
-    #     title = chosen_card_elements[0],
-    #     text = chosen_card_elements[1]
-    # )
+st.divider()
 
-else:
-    # st.write('Goodbye')
-    pass
+if st.button('Random button', key="rand"):
+    points_list = ["You got a point!", "Better luck next time!"]
+    chosen_points = random.choice(points_list)
+    st.write(f"""
+    ## {chosen_points}
+             """)
+
+st.divider()
+
+if st.button('Random number', key="rand_num"):
+    rand_number = random.choice(range(10))
+    st.write(f"""
+    ## {rand_number}
+             """)
