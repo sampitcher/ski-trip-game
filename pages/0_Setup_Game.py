@@ -7,6 +7,15 @@ st.write("""
 """)
 
 st.divider()
+st.write(
+    """
+    ### 0. Initial set up
+    - Lay a piste map on the table, this is the board
+    - Each player needs 2 counters (beer caps, coins anything.) One is for the player, one is to close a piste.
+    - Each player need a pen and paper, explained below
+    """)
+
+st.divider()
 st.write("### 1. Which resort are you in?")
 
 option = st.selectbox(
