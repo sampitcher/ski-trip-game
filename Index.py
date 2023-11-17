@@ -28,13 +28,14 @@ st.divider()
 
 st.write("""
 # Game play
-## A turn consists of either:
-- Taking a lift
-- Skiing a piste
-When you take a lift, you must first pick a random card in the Game section on the left.
+### A turn consists of either taking a lift *or* skiing a piste:
+- Taking a lift.
+When you take a lift, you must first pick a random card in the Game section before taking the lift. If you take a lift on your list, you can cross that lift out and you get 5 points at the end of the game. You don't need to say which lift you want to take.
+- Skiing a piste.
 You finish your go either at the top or the bottom of a ski piste.
 You cannot ski down a piste that is closed.
 Every time you ski a piste, tally a mark in the appropriate piste colour section in the Piste Tally column.
+When skiing, you may continue to ski as far as you want before stopping at a lift. When doing so, tally a mark for every colour of piste that you touch.
          
 ## Ski Level
 Every player starts at blue level. This means they can *only* ski down blue pistes.
@@ -64,7 +65,6 @@ Use this to choose your map and set up the board and playing bits.
 ### Game
 Use this to play the game, here you can:
 - Pick a card
-- Hit a random button to see if you get a point or not
 - Random number generator
 
 # Winning the game

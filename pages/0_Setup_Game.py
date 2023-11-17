@@ -79,5 +79,8 @@ st.write("""
 st.divider()
 st.write("### 5. Each player can put their barrier token on a ski lift of their choice to close the lift")
 
-# st.divider()
-# st.write("### 6. Each player can put their barrier token on a ski run of their choice to close the piste")
+st.divider()
+st.write("""
+         ### 6. Head to the Game section in the menu on the left and HIT THE SLOPES!
+         Youngest player goes first and then play clockwise.
+         """)
