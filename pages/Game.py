@@ -1,7 +1,10 @@
 import streamlit as st
-# from streamlit_card import card
 import random
 import json
+
+if 'cards' not in st.session_state:
+    with open("cards.json") as cards_file:
+        st.session_state.cards = json.loads(cards_file.read())
 
 if st.button('Pick a card', key="pick"):
     if len(st.session_state.cards) == 0:

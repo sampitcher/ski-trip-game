@@ -53,7 +53,10 @@ with col3:
 #    st.image("https://static.streamlit.io/examples/owl.jpg")
 
 st.divider()
-st.write("### 3. Grab your paper and pen, then click below to generate a list of ski lifts you need to get to.")
+st.write("""
+         ### 3. Grab your paper and pen, then click below to generate a list of ski lifts you need to get to.
+         Each player has their own list that they can choose to hide from the other players. Each player takes it in turns to generate a list for themselves. Note: players could share the same lifts they need to take.
+         """)
 
 with open("lifts.json") as lifts_file:
     lifts = json.loads(lifts_file.read())
@@ -68,10 +71,10 @@ if st.button('Generate a list of lifts', key="lifts"):
         st.write("resort not available")
 
 st.divider()
-st.write("### 4. Each player can put their playing token at a lift at the bottom of the piste map")
+st.write("### 4. Each player can put their playing token at any lift at the bottom of the piste map")
 
 st.divider()
-st.write("### 5. Each player can put their barrier token on a ski run of their choice to close the piste")
+st.write("### 5. Each player can put their barrier token on a ski lift of their choice to close the lift")
 
-st.divider()
-st.write("### 6. Each player can put their barrier token on a ski run of their choice to close the piste")
+# st.divider()
+# st.write("### 6. Each player can put their barrier token on a ski run of their choice to close the piste")
