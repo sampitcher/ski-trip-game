@@ -1,6 +1,7 @@
 import streamlit as st
 import random
 import json
+from PIL import Image
 
 st.write("""
 # Let's setup the game
@@ -34,23 +35,8 @@ st.divider()
 st.write("### 2. Each player grab a pen and paper. Divide it into 3 columns to look like this:")
 col1, col2, col3 = st.columns(3)
 
-with col1:
-   st.write("#### My points!")
-#    st.image("https://static.streamlit.io/examples/cat.jpg")
-
-with col2:
-   st.write("#### List of ski lifts")
-#    st.image("https://static.streamlit.io/examples/dog.jpg")
-
-with col3:
-   st.write(
-       """
-       #### My level
-       - Blue
-       - Red
-       - Black
-       """)
-#    st.image("https://static.streamlit.io/examples/owl.jpg")
+image = Image.open('gamesheet.png')
+st.image(image, caption='Score Sheet')
 
 st.divider()
 st.write("""
@@ -84,3 +70,22 @@ st.write("""
          ### 6. Head to the Game section in the menu on the left and HIT THE SLOPES!
          Youngest player goes first and then play clockwise.
          """)
+
+
+# with col1:
+#    st.write("#### My points!")
+# #    st.image("https://static.streamlit.io/examples/cat.jpg")
+
+# with col2:
+#    st.write("#### List of ski lifts")
+# #    st.image("https://static.streamlit.io/examples/dog.jpg")
+
+# with col3:
+#    st.write(
+#        """
+#        #### My level
+#        - Blue
+#        - Red
+#        - Black
+#        """)
+# #    st.image("https://static.streamlit.io/examples/owl.jpg")
