@@ -71,7 +71,10 @@ if st.button('Generate a list of lifts', key="lifts"):
         st.write("resort not available")
 
 st.divider()
-st.write("### 4. Each player can put their playing token at any lift at the bottom of the piste map")
+st.write("""
+         ### 4. Each player can put their playing token at any starting point on the map
+         A starting point is any lift at the bottom of the map that is accessible. This is normally a car park or bus stop.
+         """)
 
 st.divider()
 st.write("### 5. Each player can put their barrier token on a ski lift of their choice to close the lift")

@@ -20,6 +20,7 @@ st.divider()
 
 st.write("""
 # Aim of the game
+Embark on the ski trip of a life time across any resort in the world. Play against your family and friends to ski hard and take 6 lifts that are specifc to each player.
 Once a player takes all their ski lifts and returned to their starting point, the game ends. Then all points are tallied up and the player with the most points is the winner.
 """)
          
